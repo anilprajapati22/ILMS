@@ -87,16 +87,15 @@ WSGI_APPLICATION = 'loanmanagement.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-            'USER': '',
-            'PASSWORD': '',
-            'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-            'PORT': '',
+DATABASES = {'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'mysql',
+            'USER': 'root',
+            'PASSWORD': 'sgn',
+            'HOST': 'sgndb.c6ng9gwzxup7.ap-south-1.rds.amazonaws.com',
+            'PORT': '3306',
+           }
         }
-    }
 
 
 # Password validation
